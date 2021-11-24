@@ -1,0 +1,35 @@
+﻿@page
+@model Mock_Shop.Pages.IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">J & J where fashion meets quality</h1>
+    <p>We make the best fashion, buy our stuff! </a>.</p>
+</div>
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thread>
+        <tr>
+            <tr>
+            </tr>
+            <tr>
+        <tr></tr>
+    </thread>
+    <tbody>
+        
+<tr>
+    <td>
+    @Html.DisplayFor(ViewData["id"])
+    </td>
+    <td>
+    @Html.ActionLink("Edit", "Edit", new{})
+    </td>
+</tr>
+        
+       
+    </tbody>
+</table>

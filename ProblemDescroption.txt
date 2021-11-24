@@ -1,0 +1,27 @@
+Hi Poornima
+
+ 
+
+Thank you for the talk, I thought it went well and hope you do too. Let me know if you have any additional questions!
+
+As discussed I am sending you a small task for you to prepare and return to me. I will setup a new meeting once I have received it. 
+
+The task should be achievable within 1-2 hours, depending on the level of complexity (and once you have your environment up and running).
+
+ 
+
+Please notice that this is only to have something to discuss during the interview. We will not draw any conclusions based on your solution.
+
+The attached JSON file contains some mock data of our products and categories. Use the file and create a small project, what you create is optional. Feel free to use any backend technology such as Node.js, ASP.NET, PHP and etc. If you want to challenge yourself, use C#/.Net.
+
+Here’s a few ideas that you can choose from:
+
+1. create a web application with pages that show the products or categories. The pages could be a PLP (product listing page) or a PDP (product detail page). 
+They can be very simple with minimum styling or no styling at all.
+2. create a web application with an advanced search engine that shows products or categories with a flexible, better and stronger search experience.
+3. create a REST API for the product and category endpoints which returns the data based on user’s requests, parameters and etc.
+ 
+
+Please send the link to the repository in GitHub, so we can review the project 😊
+
+ 
