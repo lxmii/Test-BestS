@@ -76,14 +76,17 @@ namespace Jack_Jones.Controllers
     {
         [HttpGet]
 
-        public List<Product> GetInfo()
+        public List<Product> Get()
         {
                  
                     //StreamReader r = new("..\\Mock_Shop\\Pages\\JSONfile\\test-technical-prep.json");
                     StreamReader r = new StreamReader("..\\test-technical-prep.json");
                     Root root = new();
                     root = JsonConvert.DeserializeObject<Root>(r.ReadToEnd());
-                    return root.products;
+            string[] res = new string [40];
+            int i = 0;
+            return root.products;
+
 
         
          }
