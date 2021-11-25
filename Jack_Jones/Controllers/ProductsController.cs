@@ -90,21 +90,41 @@ namespace Jack_Jones.Controllers
 
 
         }
-        [HttpGet("{id:int}")]
+        [HttpGet("id")]
         public Product GetID(int iden)
         {
             StreamReader r = new StreamReader("..\\test-technical-prep.json");
             Root root = new();
             Product ret = new();
             root = JsonConvert.DeserializeObject<Root>(r.ReadToEnd());
-            int i = 0;
-            foreach( Product temp in root.products)
+            
+            foreach (Product temp in root.products)
             {
-                    if((temp.id == iden))
-                    {
-                        ret=temp; 
-                    }
+                if ((temp.id == iden))
+                {
+                    ret = temp;
+                }
             }
+            return ret;
+        }
+        [HttpGet("categories")]
+        public List<Product> GetID(string cat)
+        {
+            StreamReader r = new StreamReader("..\\test-technical-prep.json");
+            Root root = new();
+            List <Product> ret = new List<Product>();
+            root = JsonConvert.DeserializeObject<Root>(r.ReadToEnd());
+            foreach (Product temp in root.products)
+            {
+               foreach(string s in temp.categories)
+                {
+                    if (s==cat)
+                    { 
+                        ret.Add(temp);
+                    }
+                }
+            }
+            
             return ret;
         }
     }
