@@ -22,7 +22,7 @@
         public double price { get; set; }
         public object? stock { get; set; }
         public string? color { get; set; }
-        public List<object>? size { get; set; }
+        public List<string>? size { get; set; }
         public Name? name { get; set; }
         public List<string>? images { get; set; }
         public List<string>? categories { get; set; }

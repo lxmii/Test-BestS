@@ -1,8 +1,9 @@
 ﻿using Jack_Jones.Models;
 namespace Jack_Jones.DataAccess
 {
-    public interface IGetJson
+    public interface IGetData
     {
-        Root JsonReturn();
+        Root DataReturn();
+       
     }
 }

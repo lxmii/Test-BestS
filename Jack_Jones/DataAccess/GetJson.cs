@@ -4,12 +4,23 @@ using Newtonsoft.Json;
 
 namespace Jack_Jones.DataAccess
 {
-    public class GetJson: IGetJson
+    public class GetJsonLocal: IGetData
     {
-        public Root JsonReturn()
+        public Root DataReturn()
         {
             StreamReader r = new StreamReader("..\\test-technical-prep.json");
             Root root= new Root();
+            root = JsonConvert.DeserializeObject<Root>(r.ReadToEnd());
+            return root;
+        }
+
+    }
+    public class GetJsonDB : IGetData
+    {
+        public Root DataReturn()
+        {
+            StreamReader r = new StreamReader("..\\test-technical-prep.json");
+            Root root = new Root();
             root = JsonConvert.DeserializeObject<Root>(r.ReadToEnd());
             return root;
         }

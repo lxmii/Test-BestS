@@ -6,5 +6,6 @@ namespace Jack_Jones.Business
         public Root ReturnProducts();
         public Product ReturnID(int iden);
         public List<Product> ReturnCat(string cat);
+        public List<Product> ReturnSize(string Size);
     }
 }
