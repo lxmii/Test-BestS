@@ -10,8 +10,10 @@ As to the architecture, I created Models and Controller namespaces.I have also i
 in the form of a class object.
 
 Result:
-The project successfully creates RestAPI that accepts user inputs for the following and returns data in json format.
+The project successfully creates a web application that employs RestAPI accepting user inputs for the following and returns data in json format.
 1. Product ID
 2. Category and 
 3. Size 
 
+This list can be easily extended without disturbing the over all structure of the business logic, thanks to object oriented functionality of C# and the architecture employed
+ 
